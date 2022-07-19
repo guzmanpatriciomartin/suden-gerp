@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyBsSgd5fvQyxCh0C5YSbFe_P-XQ3h6gY_4",
+              authDomain: "gerp-suden.firebaseapp.com",
+              projectId: "gerp-suden",
+              storageBucket: "gerp-suden.appspot.com",
+              messagingSenderId: "648381361384",
+              appId: "1:648381361384:web:9a732a0210cd47cf282d5d",
+              measurementId: "G-MBN4VTDK22"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+          </script>
+    <script src="script.js"></script>
+        <title>Alumnos - SUDEN </title>
+</head>
+
+<body>
+    <div class="login-clean" style="background-color: rgba(241, 247, 252, 0);padding-top: 100px;padding-bottom: 150px;"
+        bis_skin_checked="1">
+        <form method="post" class="bg-light shadow-sm" style="max-width: 600px; padding-top: 0px;">
+            <div class="ilustration"><img id="logo" src="https://www.somossuden.com/inicio/assets/img/SUDEN.png"
+                    alt="suden logo" srcset="">
+                <small class="form-text text-muted" style="font-size: 20px;">Bienvenid@, Ingrese los siguientes Datos a
+                    Continuación:</small></br>
+            </div>
+            <div class="form-group" bis_skin_checked="1"><input type="number"
+                    placeholder="Ingrese su nro de Cédula/Pasaporte/DNI" required="required" class="form-control"></div>
+
+
+            <div class="form-group" bis_skin_checked="1"><button type="submit" class="btn btn-primary btn-block"
+                    style="background-color: rgb(232, 123, 49);">Continuar</button></div>
+        </form>
+    </div>
+</body>
+
+</html>
